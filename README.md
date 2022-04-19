@@ -17,7 +17,7 @@ Simple Arduino code which takes Flipsky remote UART packets to: trigger STOP lig
 # USAGE
 Connect Arduino pin 0 (RXD) to TXD of Flipsky remote receiver.
 
-- Riding forvard will lit WS2812 dark red.
+- Going forward will lit WS2812 dark red.
 - Idle or breaking will light WS2812 bright red + STOP pin will be switched HIGH
 - Quickly smash full reverse 3 times to toggle HEADLIGHT pin ON/OFF
 - Quickly smash full reverse 4 times to toggle stealth mode ON/OFF (no lights - default states on pins)
