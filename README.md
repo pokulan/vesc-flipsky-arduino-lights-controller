@@ -26,3 +26,7 @@ Connect Arduino pin 0 (RXD) to TXD of Flipsky remote receiver.
 # External library
 Adafruit_NeoPixel to drive WS2812b leds.
 https://github.com/adafruit/Adafruit_NeoPixel
+
+# Tested with
+Flispky 2.4Ghz Remote VX1
+https://flipsky.net/products/flipsky-remote-vx1?gclid=CjwKCAjwu_mSBhAYEiwA5BBmf9LBBx9PpFKv5CgjhqQj1TavKo4SD233scOLS4ZKl-M7fe24MMejLRoCQYQQAvD_BwE
