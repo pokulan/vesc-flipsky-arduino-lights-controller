@@ -1,6 +1,6 @@
 #include <Adafruit_NeoPixel.h>
 
-char bajt;
+char one_byte;
 byte counter = 0;
 
 #define PIN            6
@@ -35,6 +35,12 @@ bool extra_gpio = false;
 
 void setup() {
   pinMode(FLASH, OUTPUT);
+  pinMode(EXTRA, OUTPUT);
+  pinMode(FLASH_INV, OUTPUT);
+  pinMode(EXTRA_INV, OUTPUT);
+  pinMode(STOP_LIGHT, OUTPUT);
+  pinMode(STOP_LIGHT_INV, OUTPUT);
+  
   Serial.begin(115200);
   pixels.begin();
 
@@ -43,9 +49,9 @@ void setup() {
 
 void loop() {
   while(Serial.available()){      // READING PACKET
-    Serial.readBytes(&bajt, 1);
-    if(byte_counter == 0 && (bajt != 2)) valid = false;
-    if(valid) data[byte_counter] = bajt;
+    Serial.readBytes(&one_byte, 1);
+    if(byte_counter == 0 && (one_byte != 2)) valid = false;
+    if(valid) data[byte_counter] = one_byte;
     byte_counter ++;
   }
   
