@@ -22,3 +22,7 @@ Connect Arduino pin 0 (RXD) to TXD of Flipsky remote receiver.
 - Quickly smash full reverse 3 times to toggle HEADLIGHT pin ON/OFF
 - Quickly smash full reverse 4 times to toggle stealth mode ON/OFF (no lights - default states on pins)
 - Quickly smash full reverse 5 times to toggle EXTRA pin ON/OFF
+
+# External library
+Adafruit_NeoPixel to drive WS2812b leds.
+https://github.com/adafruit/Adafruit_NeoPixel
